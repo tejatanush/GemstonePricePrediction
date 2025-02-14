@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from src.logger.logging import logging
+from src.logger.log_info import logging
 from src.exception.exception import customexception
 
 
@@ -24,7 +24,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
         try:
-            data=pd.read_csv("https://raw.githubusercontent.com/sunnysavita10/fsdsmendtoend/main/notebooks/data/gemstone.csv")
+            data=pd.read_csv("https://raw.githubusercontent.com/tejatanush/Medical-Charges-Prediction/refs/heads/main/Health_Price_Prediction.csv")
             logging.info(" reading a df")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
