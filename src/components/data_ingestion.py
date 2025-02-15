@@ -24,7 +24,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
         try:
-            data=pd.read_csv("https://raw.githubusercontent.com/tejatanush/Medical-Charges-Prediction/refs/heads/main/Health_Price_Prediction.csv")
+            data=pd.read_csv("https://raw.githubusercontent.com/tejatanush/House-Price-Prediction/refs/heads/main/raw.csv")
             logging.info(" reading a df")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
@@ -42,7 +42,7 @@ class DataIngestion:
             logging.info("data ingestion part completed")
             
             return (
-                 
+                
                 
                 self.ingestion_config.train_data_path,
                 self.ingestion_config.test_data_path

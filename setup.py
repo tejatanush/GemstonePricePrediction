@@ -1,7 +1,7 @@
 from setuptools import find_packages,setup
 from typing import List
 setup(
-    name='HousePricePrediction',
+    name='DimondPricePrediction',
     version='0.0.1',
     author='teja tanush',
     author_email='tejatanush47@gmail.com',
