@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tejat/Desktop/AIML%20Projects/MLOPS_PRACTICE/mlruns/0/2ffb7fb5a4914d21a270e67f8152f758/artifacts
+end_time: 1739628082578
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2ffb7fb5a4914d21a270e67f8152f758
+run_name: skillful-cub-293
+run_uuid: 2ffb7fb5a4914d21a270e67f8152f758
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739628075466
+status: 3
+tags: []
+user_id: tejat
