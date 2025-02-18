@@ -8,3 +8,4 @@ mlflow==2.2.2
 dvc
 apache-airflow
 psycopg2-binary  # Add this line
+pendulum

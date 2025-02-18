@@ -1,6 +1,6 @@
 from flask import Flask,request,render_template
 
-from src.pipeline.prediction_pipeline import PredictPipeline,CustomData
+from src.DimondPricePrediction.pipelines.prediction_pipeline import PredictPipeline,CustomData
 
 app=Flask(__name__)
 
