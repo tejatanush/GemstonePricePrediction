@@ -1,13 +1,12 @@
 import pandas as pd
 import numpy as np
-from src.logger.log_info import logging
-from src.exception.exception import customexception
 import os
 import sys
+from src.DimondPricePrediction.logger import logging
+from src.DimondPricePrediction.exception import customexception
 from dataclasses import dataclass
-from pathlib import Path
-
-from src.utils.utils import save_object,evaluate_model
+from src.DimondPricePrediction.utils.utils import save_object
+from src.DimondPricePrediction.utils.utils import evaluate_model
 
 from sklearn.linear_model import LinearRegression, Ridge,Lasso,ElasticNet
 

@@ -1,19 +1,18 @@
-import pandas as pd
-import numpy as np
-from src.logger.log_info import logging
-from src.exception.exception import customexception
 import os
 import sys
-from dataclasses import dataclass
-from pathlib import Path
+import pandas as pd
+import numpy as np
 
+from dataclasses import dataclass
+from src.DimondPricePrediction.exception import customexception
+from src.DimondPricePrediction.logger import logging
 
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 
-from src.utils.utils import save_object
+from src.DimondPricePrediction.utils.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
@@ -126,3 +125,4 @@ class DataTransformation:
 
             raise customexception(e,sys)
             
+    
